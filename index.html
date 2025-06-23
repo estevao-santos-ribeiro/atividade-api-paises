@@ -1,11 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API - Países</title>
+  <meta charset="UTF-8" />
+  <title>Informações de Países 🌎</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <h1>Hello, world!</h1>
+  <div class="container">
+    <h1>Consulta de Países 🌍</h1>
+    
+    <input type="text" id="input-pais" placeholder="Digite o nome do país..." />
+    <button id="buscar">Buscar</button>
+
+    <div class="info" id="info">
+      <p id="loading" style="display: none;">Carregando...</p>
+      <img id="bandeira" alt="Bandeira" />
+      <p><strong>Nome Oficial:</strong> <span id="nome"></span></p>
+      <p><strong>Capital:</strong> <span id="capital"></span></p>
+      <p><strong>Região:</strong> <span id="regiao"></span></p>
+      <p><strong>População:</strong> <span id="populacao"></span></p>
+      <p><strong>Idioma(s):</strong> <span id="idioma"></span></p>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
